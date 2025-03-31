@@ -1,0 +1,498 @@
+body {
+  font-size: 16px;
+  color: #fff;
+  background-color: #491427;
+  font-family: 'Oxygen', sans-serif;
+}
+/*scrolling*/
+
+.cssmarquee {
+  height: 50vh;
+  /* overflow: hidden; */
+  position: relative;
+  }
+  .cssmarquee h1 {
+    font-size: 1.1em;
+    /* position: absolute; */
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    line-height: 20px; 
+    text-align: left;
+    transform:translateX(100%);
+    animation: cssmarquee 45s linear infinite;
+  }
+  /*color of font scrolling*/
+  
+   .cssmarquee h1 >a {
+    color: turquoise;
+  }
+  
+  /*pausing the rol*/
+  .cssmarquee h1 :hover {
+    animation-play-state: paused;
+  }
+  
+  @keyframes cssmarquee {
+  0% {
+  transform: translateX(100%);
+  }
+  100% {
+  transform: translateX(-100%);
+  }
+  }
+
+
+/** HEADER **/
+#header-nav {
+  background-color: #f6b319;
+  border-radius: 0;
+  border: 0;
+  
+}
+
+#logo-img {
+  background: url('../images/emblem.png') no-repeat;
+  width: 130px;
+  height: 130px;
+  margin: 10px 10px 5px 0;
+ 
+}
+
+.navbar-brand {
+  padding-top: 30px;
+}
+.navbar-brand h1, .navbar-brand h2 { /* Office name */
+  font-family: 'Lora', serif;
+  color: #557c3e;
+  text-transform: uppercase;
+  font-weight:normal;
+  text-shadow: 1px 1px 1px #222;
+  margin-top: 0;
+  margin-bottom: 10px;
+  line-height: .75;
+}
+.navbar-brand h1 { /* Office name */  
+  font-size: 1.2em; 
+}
+.navbar-brand h2 { /* Office name */  
+  font-size: 0.8em;
+ 
+}
+.navbar-brand h1 a, .navbar-brand h2 a{
+  color: #557c3e;
+}
+.navbar-brand a:hover, .navbar-brand a:focus {
+  text-decoration: none;
+ 
+}
+
+#nav-list {
+  margin-top: 10px;
+}
+#nav-list a {
+  color: #951C49;
+  text-align: center;
+  font-size: 0.8em;
+}
+#nav-list a:hover {
+  background: #E7E7E7;
+  
+}
+#nav-list a span {
+  font-size: 1.0em;
+}
+
+/*#nav-list .phone:hover:after{*/
+/*   content:" 28672351";*/
+/*  }*/
+/*#nav-list .email:hover:after{*/
+/*    content:" wrlo.wpc@gmail.com";*/
+/*  }*/
+
+/* #nav-list a span:hover:before { content:"022-28672351"}  */
+/* <span>3 replies</span>
+button {width:6em}
+button:hover span {display:none}
+button:hover:before {content:"Reply!"} */
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 1px solid #61122f;
+}
+.navbar-header button.navbar-toggle {
+  clear: both;
+  margin-top: -30px;
+}
+/* #collapsable-nav{
+height: auto;
+} */
+/* END HEADER */
+/* FOOTER */
+.panel-footer {
+  margin-top: 30px;
+  padding-top: 35px;
+  padding-bottom: 30px;
+  background-color: #222;
+  border-top: 0;
+}
+.panel-footer section
+.panel-footer div.row {
+  margin-bottom: 35px;
+}
+/* .panel-footer .container .text-center {
+  text-align:left;
+} */
+#hours, #address, #bharatkosh{
+  line-height: 0.8;
+}
+#hours > span, #address > span, #bharatkosh > span {
+  font-size: 1.1em;
+}
+#download > a, #directory> a, #gazette > a{
+  color: rgb(235, 187, 31);
+}
+.visit-img, .address-img, .bharatkosh-img  {
+  position: relative;
+  border: 2px solid #3F0C1F; 
+  overflow: hidden;
+  padding: 0;
+  margin-right: -15px;
+  margin-left: auto;
+  margin-bottom: 20px;
+  max-width: 300px;
+  max-height: 200px;
+}
+
+.download-img,.directory-img,.gazette-img {
+  max-height: 80px;
+}
+/* 
+
+/* END FOOTER */
+
+/* HOME PAGE */
+.container .jumbotron {
+  box-shadow: 0 0 50px #3F0C1F;
+  border: 2px solid #3F0C1F;
+}
+
+#menu1-tile,#menu2-tile,#menu3-tile, #menu4-tile,#menu5-tile,#menu6-tile,#menu7-tile, #menu8-tile {
+  height: 250px;
+  width: 100%;
+  margin-bottom: 15px;
+  position: relative;
+  border: 2px solid #3F0C1F;
+  overflow: hidden;
+}
+#menu1-tile:hover, #menu2-tile:hover, #menu3-tile:hover,#menu4-tile:hover, #menu5-tile:hover, #menu6-tile:hover,#menu7-tile:hover, #menu8-tile:hover {
+  box-shadow: 0 1px 5px 1px #cccccc;
+}
+
+#menu1-tile {
+  background: url('../images/menu1.jpg') no-repeat;
+  background-position: center;
+}
+#menu2-tile {
+  background: url('../images/menu2.jpg') no-repeat;
+  background-position: center;
+}
+#menu3-tile {
+  background: url('../images/menu3.jpg') no-repeat;
+  background-position: center;
+}
+#menu4-tile {
+  background: url('../images/menu4.jpg') no-repeat;
+  background-position: center;
+}
+
+#menu5-tile {
+  background: url('../images/menu5.jpg') no-repeat;
+  background-position: center;
+}
+#menu6-tile {
+  background: url('../images/menu6.jpg') no-repeat;
+  background-position: center;
+}
+#menu7-tile {
+  background: url('../images/menu7.jpg') no-repeat;
+  background-position: center;
+}
+#menu8-tile {
+  background: url('../images/menu8.png') no-repeat;
+  background-position: center;
+}
+
+
+/* #specials-tile {
+  background: url('../images/specials-tile.jpg') no-repeat;
+  background-position: center;
+} */
+
+#menu1-tile span, #menu2-tile span,#menu3-tile span,#menu4-tile span,#menu5-tile span,#menu6-tile span,#menu7-tile span, #menu8-tile span {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 1.6em;
+  text-transform: uppercase;
+  background-color: #000;
+  color: #fff;
+  opacity: .8;
+}
+
+/* END HOME PAGE */
+
+
+
+/* MENU CATEGORIES PAGE */
+.category-tile { 
+  position: relative;
+  border: 2px solid #3F0C1F;
+  overflow: hidden;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto 15px;
+}
+.category-tile span {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  background-color: #000;
+  color: #fff;
+  opacity: .8;
+}
+.category-tile:hover {
+  box-shadow: 0 1px 5px 1px #cccccc;
+}
+
+#menu-categories-title + div {
+  margin-bottom: 50px;
+}
+/* END MENU CATEGORIES PAGE */
+
+/* FAQ*/
+#faq-tile {
+  height: auto;
+  width: 100%;
+  margin-bottom: 15px;
+  position: relative;
+  border: 2px solid #3F0C1F;
+  overflow: hidden;
+  color:white;
+  }
+.panel-body span {
+  /* text-transform: uppercase; */
+  font-weight: bold;
+  font-size: 1.5em;
+  color:darkgreen;
+}
+/* end of FAQ*/
+/* USR */
+#postUsrForm{
+  margin-left: 20px;
+}
+select{
+  padding: 5px;
+  width: 280px;
+  border: 2px solid blue;
+  color:black;
+ }
+#display {
+  width:100%;
+  padding: 0px;
+}
+input[type=number],[type=text],[type=search],[type=date]{
+  background-color:ghostwhite;
+  border: 2px solid blue;
+}
+#result{
+  margin-left:20px;
+}
+#toggle {
+ visibility: hidden;
+ height:auto;
+ 
+}
+/*override the bootstrap effect on the cancel button in USR search input*/
+input[type=search]::-webkit-search-cancel-button {
+  -webkit-appearance: searchfield-cancel-button;
+}
+#login,#register,#formReset,#formElem,#welcome{
+  margin-left: 20px;
+  margin-right: 20px;
+  
+}
+#login,#register,#formReset,#formElem,#welcome > input {
+  width:330px;
+}
+
+
+#tbl, th,td {
+     border: 1px solid white;
+ }
+ #tbl>th, td {
+  padding: 10px;
+} 
+
+  #users li{
+    
+    font-size: 14px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+/*End of USR*/
+/*GOC*/
+#gocData{
+  margin-left: 20px;
+}
+#usersGoc li{
+    
+  font-size: 14px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+/*End of GOC*/
+/*RTR*/
+
+
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+  .container .jumbotron {
+    background: url('../images/jumbotron_1200.jpg') no-repeat;
+    height: 675px;
+  }
+}
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* Header */
+  /*#logo-img {*/
+  /*  background: url('../images/emblem.png') no-repeat;*/
+  /*  width: 125px;*/
+  /*  height: 130px;*/
+  /*  margin: 5px 5px 5px 0;*/
+  /*}*/
+  /* End Header */
+   /* Home Page */
+   .container .jumbotron {
+    background: url('../images/jumbotron_992.jpg') no-repeat;
+    height: 558px;
+  }
+  /* End Home Page */
+}
+
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  .container .jumbotron {
+    background: url('../images/jumbotron_768.jpg') no-repeat;
+    height: 432px;
+  }
+  .navbar-brand {
+    padding-top: 10px;
+    height: 70px;
+  }
+
+}
+
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+  /* Header */
+  .navbar-brand {
+    padding-top: 10px;
+    height: 70px;
+  }
+  .navbar-brand h1,h2 { /* Restaurant name */
+    padding-top: 0px;
+    /* padding-bottom: 20px; */
+    font-size: 3vw; /* 1vw = 1% of viewport width */
+  }
+  
+  
+  #collapsable-nav a { /* Collapsed nav menu text */
+    font-size: 0.8em;
+  }
+  #collapsable-nav a span { /* Collapsed nav menu glyph */
+    font-size: 1em;
+    margin-right: 5px;
+  }
+
+ 
+  /* End Header */
+  /* END HEADER */
+
+  /* Footer */
+  .panel-footer section {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+ 
+  .panel-footer section hr {
+    width: 50%;
+  }
+  /* .img-responsive {
+    width:50%;
+  } */
+  /* below code taken from the stackoverflow: 
+  https://stackoverflow.com/questions/23990784/how-can-i-center-a-responsive-image
+  */
+  /* .img-responsive {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    -webkit-transform: translate(-50%, 0); */
+/* }
+
+  /* End Footer */
+
+    /* Home Page */
+    .container .jumbotron {
+      margin-top: 30px;
+      padding: 0;
+    }
+    #menu-tile, #specials-tile {
+      width: 360px;
+      margin: 0 auto 15px;
+    }
+  
+    .menu-item-photo {
+      margin-right: auto;
+    }
+    .menu-item-tile .menu-item-price {
+      text-align: center;
+    }
+    .menu-item-description {
+      text-align: center;;
+    }
+    .visit-img, .address-img, .bharatkosh-img{
+      margin-right: auto;
+    }
+
+}
+
+/********** Super extra small devices Only :-) (e.g., iPhone 4) **********/
+@media (max-width: 479px) {
+  /* Header */
+  /* .navbar-brand h1 { 
+    padding-top: 5px;
+    font-size: 5vw;
+  } */
+   .col-xxs-12 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    float: left;
+    width: 100%;
+  }
+}
+
+
+
